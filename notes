@@ -1,0 +1,154 @@
+* variable syntax var,let,const
+var -> relax (all is permitted)
+let -> strict (you can not redeclare a variable name)
+const -> stricter (you can not redeclare and reassign)
+
+* JavaScript is an interpreted type of programming language
+
+* JavaScript allows its interpreter (browser or nodejs) to assign data type base on the value
+    * implicit variable declaration
+    let a = 100; // you did not define the variable data type explicitly
+    console.log(typeof(a));
+
+    let str = "String";
+    console.log(typeof(str));
+
+    let bool = true;
+    console.log(typeof(bool));
+
+// JavaScript operators
+
+    * Arithmetic Operators
+    * Assignment Operators
+    * Comparison Operators
+    * String Operators
+    * Logical Operators
+    * Bitwise Operators
+    * Ternary Operators
+    * Type Operators
+
+// Conditional Statement Syntax
+  if (condition) {
+    // statement
+  }
+  
+  if (condition) {
+    // statement
+  } else {
+    // statement
+  }
+  
+  if (condition) {
+  } else if (condition) {
+  } else {
+  }
+  
+  switch (value_to_check) {
+    case condition: // statement
+      break;
+    case condition: // statement
+      break;
+    default:
+      // statement
+      break;
+  }
+  
+
+// Loops
+// for loop
+for ($initial; $condition; $change) {}
+
+// while
+$initialValue;
+while ($condition) {
+  $change;
+}
+
+// do while
+$initialValue;
+do {
+  $change;
+} while ($condition);
+
+// for in
+for (key in object) {
+  // code block to be executed
+}
+
+// for of
+for (variable of iterable) {
+  // code block to be executed
+}
+
+// Function Syntax
+function functionName(params){
+    // execute statement
+}
+
+// 6 types of function declaration
+// * named function 
+// * function expression
+// * anonymous function 
+// * IIFE (Immediately Invoke Function Expression)
+// * arrow functions
+// * constructor
+
+// named function
+function name(){
+
+}
+
+// function expression
+const functionName = function (){
+
+}
+
+// anonymous function
+function (){
+
+}
+
+// IIFE
+(function () {
+    
+})();
+
+// Arrow function
+// named arrow function
+const arrowFunction = (a,b) => console.log('test'); 
+const arrowFunction2 = () => {
+    return "something";
+}
+
+// anonymous function
+() => console.log('test');
+() => {
+    return "test";
+}
+
+// Constructor functions
+const fnConstructor = new Function(args1, args2,...argn+, {return a +b});
+fnConstructor(params);
+
+
+// Scopes
+/**
+ * Types of Scope 
+ * Global
+ * Local
+ *
+ * Key concepts in Scope
+ * Scope Chain -> Each function defined has its own nested scope, and any function defined within another function has a local scope which is linked to the outer function — this link is called the chain.
+ * Lexical Scope -> Lexical scoping to resolve the variable names when a function is created inside another function.
+ *
+ */
+
+// High Order Function or First-class functions
+//  -> A programming language is said to have First-class functions when functions in that language are treated like any other variable. 
+
+
+// Built-in JavaScript functions
+// https://hepunx.rl.ac.uk/~adye/jsspec11/builtin.htm
+
+// Function arguments
+ 
